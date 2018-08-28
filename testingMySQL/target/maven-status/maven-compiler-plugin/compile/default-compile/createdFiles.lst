@@ -1,0 +1,5 @@
+com/test/Application.class
+com/test/SpannerController.class
+com/test/Spanners.class
+com/test/SpannerRepository.class
+com/test/Helper.class

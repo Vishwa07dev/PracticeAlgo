@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+public class LambdaLearning {
+	
+	public static void main (String args[]){
+		List<String> arr = new ArrayList<String>();
+		arr.add("Hello");
+		arr.add("World");
+		arr.add("Vishwa");
+		arr.add("And");
+		arr.add("All");
+		arr.forEach(System.out::println);
+		Collections.sort(arr , (a ,b)-> a.compareTo(b));
+		
+		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9);
+		
+		eval(list, n->n >3);
+		
+		List<String> strings = Arrays.asList("abc" , "" , "bc" , "efg" , "abcd","", "jkl");
+		
+		int count = (int) strings.stream().filter(string -> string.isEmpty()).count();
+		
+		System.out.println("Count is : "+ count);
+		List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
+		System.out.println(filtered);
+		
+		Random random = new Random();
+		random.ints().limit(10).sorted().forEach(System.out::println);
+		
+		List<Integer> numbers = Arrays.asList(3,2,2,3,7,3,5);
+		List<Integer> squaresList = numbers.stream().map(i->i*i).distinct().collect(Collectors.toList());
+		System.out.println(squaresList);
+	}
+	//limit is used to reduce the size of the stream
+	public static void eval(List<Integer> list , Predicate<Integer> predicate){
+		for(Integer n :list){
+			if(predicate.test(n)){
+				System.out.println(n + " ");
+			}
+		}
+	}
+	
+
+
+}
+
+interface vehicle {
+	default void print(){
+		System.out.println("I am a vehicle 1");
+	}
+	
+	static void blowHorn(){
+		System.out.println("Blowing Horn !!!");
+	}
+}
+
+interface vehicle2 {
+	default void print(){
+		System.out.println("I am a vehicle 2");
+	}
+}

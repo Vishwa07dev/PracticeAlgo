@@ -1,0 +1,8 @@
+
+public class UsingCountDownLatch {
+	
+	//We can use the countdownlatch to make a thread wait till some conditions are met
+	
+	
+
+}

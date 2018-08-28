@@ -1,0 +1,14 @@
+
+public class BitMasking {
+	
+	public static void main(String args[]){
+		
+		System.out.println(Integer.toBinaryString( (int) 1));
+		System.out.println(Integer.toBinaryString( (int) 1<<3));
+		
+		int allmask;
+		System.out.println(Integer.toBinaryString( (int) allmask));
+		System.out.println(1<<3);
+	}
+
+}

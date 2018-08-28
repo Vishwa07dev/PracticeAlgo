@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private void clearCache()&apos; from &apos;LRUCacheImplementation.setValue()&apos; to &apos;LRUCacheImplementation&apos;&#x0A;- Original project: &apos;JavaTutorial&apos;&#x0A;- Method name: &apos;clearCache&apos;&#x0A;- Destination type: &apos;LRUCacheImplementation&apos;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;clearCache&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;{LRUCacheImplementation.java" name="clearCache" replace="false" selection="557 119" stamp="1526278642250" version="1.0" visibility="2"/>
+</session>

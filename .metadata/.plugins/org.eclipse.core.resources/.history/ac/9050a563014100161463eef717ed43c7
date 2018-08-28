@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class LambdaLearning {
+	
+	public static void main (String args[]){
+		List<String> arr = new ArrayList<String>();
+		arr.add("Hello");
+		arr.add("World");
+		arr.add("Vishwa");
+		arr.add("and");
+		arr.add("all");
+		
+		Collections.sort(arr, (a,b) -> a.compareTo(b));
+		System.out.println(arr);
+	}
+
+}

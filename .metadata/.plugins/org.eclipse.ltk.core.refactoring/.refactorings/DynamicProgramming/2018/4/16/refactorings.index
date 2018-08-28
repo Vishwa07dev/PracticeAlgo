@@ -1,0 +1,3 @@
+1523961559408	Extract method 'printArray'
+1523961722792	Extract method 'getMaximumIncreasingSum'
+1523961958371	Extract method 'getMaximumDecreasingSumTillLast'
